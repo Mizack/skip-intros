@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Detect Netflix",
+    "version": "1.0",
+    "description": "Skip the intros of Netflix and MAX series.",
+    "permissions": [
+        "webRequest",
+        "webNavigation",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.netflix.com/watch/",
+        "https://*.netflix.com/watch/",
+        "https://www.play.max.com/video/watch/",
+        "https://*.play.max.com/video/watch/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": [
+                "click.js",
+                "listener.js"
+            ]
+        }
+    ]
+}
