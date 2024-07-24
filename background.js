@@ -13,7 +13,7 @@ chrome.webNavigation.onCompleted.addListener(
         });
 
     },
-    { urls: ["<all_urls>"] }
+    { urls: ["netflix.com", "max.com"] }
 );
 
 function callSkipOpening(streaming) {

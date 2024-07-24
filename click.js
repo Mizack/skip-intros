@@ -12,7 +12,6 @@ var observer = new MutationObserver(function (mutations, observer) {
             let skipButton = document.querySelector(selectorFound);
             if (skipButton) {
                 skipButton.click();
-                observer.disconnect();
             }
         }
     });
