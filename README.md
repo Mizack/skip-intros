@@ -10,7 +10,7 @@ This project aims to automate the process of skipping introductions at the begin
 ## Installation
 To run this project locally, follow these steps:
     
-- Clone the repository: `git clone https://github.com/your-username/your-repository.git`;
+- Clone the repository: `git clone https://github.com/Mizack/skip-intros.git`;
     
 - Open Chrome;
 
